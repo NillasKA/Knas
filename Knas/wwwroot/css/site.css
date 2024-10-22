@@ -1,0 +1,145 @@
+html, body {
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+footer {
+  margin: 0;
+  background: #464646;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 5vh 0 5vh;
+}
+
+footer p {
+  color: #ffffff;
+  margin: 0;
+  font-family: 'niramit-regular', sans-serif;
+}
+@font-face {
+  font-family: 'lepetit';
+  src: url('../fonts/petit.otf') format('opentype');
+}
+@font-face {
+  font-family: 'niramit-xlight';
+  src: url('../fonts/Niramit-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'niramit-regular';
+  src: url('../fonts/Niramit-Regular.ttf') format('truetype');
+}
+
+
+.hero {
+  background-image: linear-gradient(220deg, rgba(124, 124, 124, 0.75) 25%, #FBF7F5 75%);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+.hero h1 {
+  font-family: lepetit, sans-serif;
+  font-size: 12em;
+  margin: 5vh 0 0 0;
+}
+
+.hero p {
+  font-family: niramit-regular, sans-serif;
+}
+
+.hero button {
+  width: 50%;
+  text-align: center;
+  font-family: niramit-xlight, sans-serif;
+  border-radius: 8px;
+  color: white;
+  background-color: rgba(56, 56, 56, 0.8);
+  border: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  font-size: 1em;
+  position: relative;
+  box-shadow: 3px 3px 3px rgba(56, 56, 56, 0.4);
+}
+
+.hero button:after {
+  content: '»';
+  opacity: 0;
+  transition: 0.5s;
+  position: absolute;
+}
+
+.hero button:hover {
+  padding: -5vh;
+}
+
+.hero button:hover:after {
+  opacity: 1;
+  padding-left: 1vh;
+}
+
+.body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #FBF7F5;
+}
+.body div {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-family: niramit-xlight, sans-serif;
+  font-size: 1.15em;
+  padding: 0 10vh 0 10vh;
+}
+
+.body h1 {
+  margin: 2vh;
+}
+
+.body img {
+  width: 20%;
+  height: auto;
+}
+
+.footer-left {
+  width: 50%;
+}
+.footer-right {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+}
+
+@media (max-width: 800px) {
+  .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #FBF7F5;
+  }
+  .body div {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: niramit-xlight, sans-serif;
+    font-size: 1.15em;
+  }
+}
