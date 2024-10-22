@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Knas' Café</title>
+    <title>Knas'</title>
     <link href="~/css/site.css" rel="stylesheet"/>
 </head>
 
@@ -12,16 +12,24 @@
     <div class="hero">
         <div class="hero-content">
             <p>ESTD. 2024</p>
-            <h1>Knas</h1>
-            <button><span>Menukort</span></button>
+            <h1>Knas'</h1>
+            <button>
+                <a asp-action="Menu" target="_blank">
+                    <span>Menukort</span>
+                </a>
+            </button>
         </div>
     </div>
     <div class="body">
         <div class="body-left">
             <h1>Kotankt Os</h1>
-            <p>Telefon<br/>26 22 98 96</p>
+            <a href="tel:26229696">
+                <p>Telefon<br/>26 22 98 96</p>
+            </a>
             <h1>Adresse</h1>
-            <p>Smedegade 13<br/>6700 Esbjerg</p>
+            <a href="geo:0,0?q=Smedegade+13+6700+Esbjerg">
+                <p>Smedegade 13<br/>6700 Esbjerg</p>
+            </a>
         </div>
         <div class="body-mid">
             <h1>Åbningstider</h1>
@@ -31,9 +39,13 @@
         </div>
         <div class="body-right">
             <h1>Følg os her</h1>
-            <img src="images/instagram.png"/>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/instagram.png"/>
+            </a>
             <p>Instagram</p>
-            <img src="images/facebook.png"/>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook.png"/>
+            </a>
             <p>Facebook</p>
         </div>
     </div>
