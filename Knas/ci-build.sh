@@ -4,4 +4,4 @@ chmod +x dotnet-install.sh
 DOTNET_VERSION=8.0
 ./dotnet-install.sh -c $DOTNET_VERSION -InstallDir ./dotnet
 ./dotnet/dotnet --version
-./dotnet/dotnet publish -c Release -o output
+./dotnet/dotnet publish -c Release -o Knas
