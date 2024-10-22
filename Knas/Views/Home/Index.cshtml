@@ -13,10 +13,8 @@
         <div class="hero-content">
             <p>ESTD. 2024</p>
             <h1>Knas'</h1>
-            <button>
-                <a asp-action="Menu" target="_blank">
-                    <span>Menukort</span>
-                </a>
+            <button type="button" onclick="location.href='@Url.Action("Menu", "Home")'" target="_blank">
+                <span>Menukort</span>
             </button>
         </div>
     </div>
