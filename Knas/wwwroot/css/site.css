@@ -10,7 +10,20 @@ a {
   text-decoration: none;
   cursor: pointer;
   transition-duration: 0.2s;
+  border: #464646 1px solid;
+  border-radius: 8px;
+  text-align: center;
+  padding: 0 1vh 0 1vh;
+  margin-top: 1vh;
+  font-family: 'niramit-xlight', sans-serif;
+  margin-bottom: 3vh;
 }
+
+#img {
+  border: none;
+  margin-bottom: 0;
+}
+
 a:hover {
   scale: 1.1;
   transition-duration: 0.25s;
@@ -75,6 +88,7 @@ footer p {
 
 .hero button {
   width: 50%;
+  height: 4vh;  
   text-align: center;
   font-family: niramit-xlight, sans-serif;
   border-radius: 8px;
@@ -105,32 +119,44 @@ footer p {
 }
 
 .body {
+  padding: 5vh 0 5vh 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
   background: #FBF7F5;
 }
+
+#body-left {
+  border-left: none;
+}
+
+#body-mid p{
+  margin-bottom: 2vh;
+}
+
 .body div {
-  width: 33%;
+  width: 20%;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   font-family: niramit-xlight, sans-serif;
-  font-size: 1.15em;
-  padding: 0 10vh 0 10vh;
+  font-size: 1em;
+  padding: 0 5vh 0 5vh;
+  border-left: rgba(86, 86, 86, 0.50) 1px solid;
 }
 
+
 .body h1 {
-  margin: 2vh;
+  margin: 1vh;
 }
 .body p {
   font-size: 1.25em;
-  margin-top: -1vh;
+  margin: 0 0 0;
 }
 
 .body img {
-  width: 15%;
+  width: 12%;
   height: auto;
 }
 
@@ -159,9 +185,15 @@ footer p {
     .body div {
       width: 100%;
       padding: 0;
+      margin-top: 4vh;
     }
+    
+    #adress {
+      margin-top: 5vh;
+    }
+    
     .body img {
-      width: 10vw;
+      width: 12vw;
       height: auto;
     }
 }

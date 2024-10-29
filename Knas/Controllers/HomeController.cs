@@ -18,7 +18,7 @@ public class HomeController : Controller
 
     public IActionResult Menu()
     {
-        string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/pdf/menukort.pdf");
+        var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/pdf/menukort.pdf");
         return PhysicalFile(filePath, "application/pdf");
     }
 }
