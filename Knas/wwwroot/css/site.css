@@ -4,6 +4,9 @@ html, body {
   overflow-x: hidden;
 }
 
+footer {
+  overflow: hidden;
+}
 
 a {
   color: inherit;
@@ -18,6 +21,12 @@ a {
   font-family: 'niramit-xlight', sans-serif;
   margin-bottom: 3vh;
 }
+
+  #nicklaskramer
+  {
+    color: white;
+    text-decoration: underline;
+  }
 
 #img {
   border: none;
@@ -164,6 +173,7 @@ footer p {
   width: 50%;
 }
 .footer-right {
+  padding-top: 3%;
   width: 50%;
   display: flex;
   justify-content: right;
